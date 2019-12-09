@@ -1,34 +1,108 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8">
-    <title>فن الطعام </title>
+    <title>فن الطعم </title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+<style media="screen">
+#art_food{
+  margin-left:250px;
+}
+#home{
+  font-family:"arefruqaa-regular";
+  font-size:20px;
+  margin-left:20px;
+}
+#first{
 
+  margin-top:40px;
+  margin-bottom:100px;
+  margin-right:70px;
+  background-color:white;
+
+  width:60px;
+  height:600px;
+}
+#first_img{
+margin-bottom:400px;
+width:340px;
+height:600px;
+ opacity: 0.5;
+}
+#two{
+
+  margin-top:40px;
+  margin-bottom:100px;
+  margin-right:70px;
+  background-color:white;
+
+  width:60px;
+  height:600px;
+}
+#two_img{
+margin-bottom:400px;
+width:300px;
+height:600px;
+ opacity: 0.5;
+
+}
+#third{
+
+  margin-top:40px;
+  margin-bottom:100px;
+  margin-right:70px;
+  background-color:white;
+
+  width:60px;
+  height:600px;
+}
+#third_img{
+margin-bottom:400px;
+width:340px;
+height:600px;
+ opacity: 0.5;
+}
+</style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" id="art_food"  href="#">فن الطعم</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" id="home">الرئيسية <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#" id="home">قائمه الطعام</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#" id="home">الأسعار</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="home">نبذه عنا</a>
           </li>
         </ul>
       </div>
     </nav>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col col-md-3" id="first">
+  <img  id="first_img"src="Design.jpg" >
+  </div>
+  <div class="col col-md-3" id="two">
+    <img  id="two_img"src="food-restaurant.jpg" >
+    </div>
+    <div class="col col-md-3" id="third">
+      <img  id="third_img"src="thumb-cocktails.jpg" >
+      </div>
+  </div>
+  </div>
+
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
