@@ -5,62 +5,101 @@
     <title>فن الطعم </title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 <style media="screen">
+body{
+}
 #art_food{
   margin-left:250px;
+  font-size: 34px ;
+  margin-right: 10px;
+font-family:"arefruqaa-regular";
 }
 #home{
   font-family:"arefruqaa-regular";
   font-size:20px;
   margin-left:20px;
+  font-size: 34px ;
 }
 #first{
-
-  margin-top:40px;
-  margin-bottom:100px;
-  margin-right:70px;
+margin-top: 50px;
+  margin-right: 50px;
   background-color:white;
-
-  width:60px;
-  height:600px;
+f
+  width:100px;
+  height:550px;
 }
 #first_img{
-margin-bottom:400px;
-width:340px;
-height:600px;
- opacity: 0.5;
+
+  margin-right: 7px;
+  margin-top: 7px;
+  width:270px;
+  height:320px;
+
 }
 #two{
 
-  margin-top:40px;
-  margin-bottom:100px;
-  margin-right:70px;
+  margin-top: 50px;
+  margin-right: 50px;
   background-color:white;
 
-  width:60px;
-  height:600px;
+  width:100px;
+  height:550px;
 }
 #two_img{
-margin-bottom:400px;
-width:300px;
-height:600px;
- opacity: 0.5;
+
+  margin-right: 7px;
+  margin-top: 7px;
+  width:270px;
+  height:320px;
+
 
 }
 #third{
 
-  margin-top:40px;
-  margin-bottom:100px;
-  margin-right:70px;
+  margin-top: 50px;
+  margin-right: 50px;
   background-color:white;
 
-  width:60px;
-  height:600px;
+  width:100px;
+    height:550px;
 }
 #third_img{
-margin-bottom:400px;
-width:340px;
-height:600px;
- opacity: 0.5;
+margin-right: 7px;
+margin-top: 7px;
+width:270px;
+height:320px;
+
+}
+#four{
+
+  margin-top: 50px;
+  margin-right: 50px;
+  background-color:white;
+
+  width:100px;
+  height:550px;
+}
+#four_img{
+margin-right: 7px;
+margin-top: 7px;
+width:270px;
+height:320px;
+
+}
+.card-text{
+  font-size: 25px;
+  font-family:"arefruqaa-regular";
+
+  font-style: normal;
+}
+.card-title{
+  font-size: 25px;
+  font-family:"arefruqaa-regular";
+font-weight: bold;
+}
+#btn_show
+{
+    font-size: 20px;
+  padding-top: 5px;
 }
 </style>
   </head>
@@ -76,7 +115,7 @@ height:600px;
             <a class="nav-link" href="#" id="home">الرئيسية <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="home">قائمه الطعام</a>
+            <a class="nav-link" href="ArtOfFoods.html" id="home">قائمه الطعام</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" id="home">الأسعار</a>
@@ -90,17 +129,50 @@ height:600px;
 
 <div class="container-fluid">
 <div class="row">
-<div class="col col-md-3" id="first">
-  <img  id="first_img"src="Design.jpg" >
-  </div>
-  <div class="col col-md-3" id="two">
-    <img  id="two_img"src="food-restaurant.jpg" >
+  <div class="col col-md-3" >
+  <div  id="first"class="card" style="width: 18rem;">
+    <img id="first_img"src="food-restaurant-Sweden.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">مقبلات</h5>
+      <p class="card-text">من أفخم الجولات العربية والعالمية</p>
+      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
     </div>
-    <div class="col col-md-3" id="third">
-      <img  id="third_img"src="thumb-cocktails.jpg" >
+  </div>
+</div>
+  <div class="col col-md-3" >
+  <div  id="two"class="card" style="width: 18rem;">
+    <img id="two_img"src="images.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">أطباق الرئيسية</h5>
+      <p class="card-text">يشار إليها دائما بحلاوة المذاق والأشباع</p>
+      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
+    </div>
+  </div>
+</div>
+<div class="col col-md-3" >
+  <div  id="third"class="card" style="width: 18rem;">
+    <img id="third_img"src="images (1).jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">الخضروات</h5>
+      <p class="card-text">يهمنا صحه الأصناف لمسه الاطباق لخدمتكم</p>
+      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
+    </div>
+  </div>
+
+  </div>
+  <div class="col col-md-3" >
+    <div  id="four"class="card" style="width: 18rem;">
+      <img id="four_img"src="red.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">مأكولات بحرية</h5>
+        <p class="card-text">جولة مميزة بتذوق الأكلات البحرية الفاخرة</p>
+        <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
       </div>
+    </div>
+
+    </div>
   </div>
-  </div>
+</div>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
