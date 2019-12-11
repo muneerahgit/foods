@@ -102,9 +102,44 @@ font-weight: bold;
     font-size: 17px;
   padding-top: 5px;
 }
-.flooter{
+#home-img{
+  width: 880px;
+  height: 600px;
+  margin: 30px;
+  background-color: black;
+  opacity: 0.7;
+  margin-right: 50px;
+    margin-left: 50px;
+}
+#text{
+  position: absolute;
+top: 74%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 80px;
+color: white;
 
-padding-top: 2000px;
+}
+#btn_show{
+margin-bottom: 80px;
+margin-right: 70px;
+background-color: inherit;
+border-color: white;
+}
+#menu_price{
+  margin-right: 140px;
+  margin-top: 50px;
+
+}
+#first_toggle, #second_toggle , #third_toggle{
+  margin-left: 60px;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+#img_first , #img_two ,#img_third{
+  width:140px;
+  height: 150px;
 }
 </style>
   </head>
@@ -132,46 +167,60 @@ padding-top: 2000px;
       </div>
     </nav>
 
-<div class="container-fluid">
-<div class="row">
-  <div class="col col-md-3" >
-  <div  id="first"class="card" style="width: 18rem;">
-    <img id="first_img"src="food-restaurant-Sweden.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">مقبلات</h5>
-      <p class="card-text">من أفخم الجولات العربية والعالمية</p>
-      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
+
+  <p id="menu_price">
+    <a id="first_toggle" class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1"
+     role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
+     >
+<img id="img_first" src="food-restaurant-Sweden.jpg" />
+     مقبلات </a>
+    <button id="second_toggle" class="btn btn-primary" type="button" data-toggle="collapse"
+     data-target="#multiCollapseExample2" aria-expanded="false"
+     aria-controls="multiCollapseExample2">
+<img id="img_two"  src="food-restaurant.jpg"/>
+    أطباق رئيسية</button>
+     <button id="third_toggle" class="btn btn-primary" type="button" data-toggle="collapse"
+      data-target="#multiCollapseExample3" aria-expanded="false"
+      aria-controls="multiCollapseExample3">
+      <img id="img_third" src="maxresdefault.jpg" />
+      الخضروات
+    </button>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+مقبلات سويدية   150ريال<br>
+مقبلات اسيويه   100ريال
+
+            </div>
+      </div>
     </div>
-  </div>
-</div>
-  <div class="col col-md-3" >
-  <div  id="two"class="card" style="width: 18rem;">
-    <img id="two_img"src="images.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">أطباق الرئيسية</h5>
-      <p class="card-text">يشار إليها دائما بحلاوة المذاق والأشباع</p>
-      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+ستيك لحم بقر نيوزلندي   300ريال<br>
+برجر لحم غنم  40ريال
+            </div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="col col-md-3" >
-  <div  id="third"class="card" style="width: 18rem;">
-    <img id="third_img"src="images (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">الخضروات</h5>
-      <p class="card-text">يهمنا لمسه الأطباق لرقيكم</p>
-      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
+
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample3">
+        <div class="card card-body">
+الفجل المشوي 150ريال<br>
+خضار استوائيه 200ريال
+            </div>
+      </div>
     </div>
   </div>
 
-  </div>
-  <div class="col col-sm-2"id="flooter">
-<p >جميع الحقوق محفوظة</p></div>
   </div>
 </div>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+
   </body>
 </html>

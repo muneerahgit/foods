@@ -102,9 +102,48 @@ font-weight: bold;
     font-size: 17px;
   padding-top: 5px;
 }
-.flooter{
+#home-img{
+  width: 880px;
+  height: 600px;
+  margin: 30px;
+  background-color: black;
+  opacity: 0.7;
+  margin-right: 50px;
+    margin-left: 50px;
+}
+#text{
+  position: absolute;
+top: 74%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 80px;
+color: white;
 
-padding-top: 2000px;
+}
+#btn_show{
+margin-bottom: 80px;
+margin-right: 70px;
+background-color: inherit;
+border-color: white;
+}
+#half-1 {
+
+  margin: 30px;
+
+}
+#half-2{
+  margin-right: 500px;
+  margin-top: -300px;
+  font-size: 20px;
+}
+#half-img {
+  width: 400px;
+  height: 400px;
+}
+form{
+  width: 400px;
+  height: 400px;
+  margin-right: 440px;
 }
 </style>
   </head>
@@ -132,42 +171,37 @@ padding-top: 2000px;
       </div>
     </nav>
 
-<div class="container-fluid">
+<div class="container fluid">
 <div class="row">
-  <div class="col col-md-3" >
-  <div  id="first"class="card" style="width: 18rem;">
-    <img id="first_img"src="food-restaurant-Sweden.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">مقبلات</h5>
-      <p class="card-text">من أفخم الجولات العربية والعالمية</p>
-      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
-    </div>
-  </div>
-</div>
-  <div class="col col-md-3" >
-  <div  id="two"class="card" style="width: 18rem;">
-    <img id="two_img"src="images.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">أطباق الرئيسية</h5>
-      <p class="card-text">يشار إليها دائما بحلاوة المذاق والأشباع</p>
-      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
-    </div>
-  </div>
-</div>
-<div class="col col-md-3" >
-  <div  id="third"class="card" style="width: 18rem;">
-    <img id="third_img"src="images (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">الخضروات</h5>
-      <p class="card-text">يهمنا لمسه الأطباق لرقيكم</p>
-      <a href="#" class="btn btn-primary" id="btn_show">للأطلاع على المزيد</a>
-    </div>
+  <div class="col col-md-12" id="half-1">
+<img src="restraunt.jpg" id="half-img"/>
+<p id="half-2">مطوره ويب مبتدئه
+<br>اتمنى دعمكم لصفحتي <br>
+وتسجيل ملاحظتكم لى وشكرا لكم </p>
+
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">الاسم</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="الاسم ">
+
+    <label for="exampleFormControlInput1">الايميل الالكتروني</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
 
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">ملاحظتكم</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
-  <div class="col col-sm-2"id="flooter">
-<p >جميع الحقوق محفوظة</p></div>
+</form>
+
+
+
+
+
   </div>
+
+</div>
 </div>
 
 
